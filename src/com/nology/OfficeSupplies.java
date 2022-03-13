@@ -72,7 +72,7 @@ public class OfficeSupplies implements Stationary {
 
     @Override
     public void removePens(int amount) {
-        if( pens >= 0){
+        if( pens >= 0 || pens < amount){
             System.out.println("Not enough pens");
         }else{
             pens -= amount;
@@ -82,7 +82,7 @@ public class OfficeSupplies implements Stationary {
 
     @Override
     public void removeStaplers(int amount) {
-        if( staplers >= 0){
+        if( staplers >= 0 || staplers < amount){
             System.out.println("Not enough staplers");
         }else{
             staplers -= amount;
@@ -92,7 +92,7 @@ public class OfficeSupplies implements Stationary {
 
     @Override
     public void removeStaples(int amount) {
-        if( staples >= 0){
+        if( staples >= 0 || staples < amount){
             System.out.println("Not enough staples");
         }else{
             staples -= amount;
@@ -102,7 +102,7 @@ public class OfficeSupplies implements Stationary {
 
     @Override
     public void removeRulers(int amount) {
-        if( rulers >= 0){
+        if( rulers >= 0 || rulers < amount){
             System.out.println("Not enough rulers");
         }else{
             rulers -= amount;
@@ -112,7 +112,7 @@ public class OfficeSupplies implements Stationary {
 
     @Override
     public void removeA4Booklets(int amount) {
-        if( a4Booklets >= 0){
+        if( a4Booklets >= 0 || a4Booklets < amount){
             System.out.println("Not enough a4Booklets");
         }else{
             a4Booklets -= amount;
